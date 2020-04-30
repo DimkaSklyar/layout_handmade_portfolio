@@ -8419,6 +8419,44 @@ body {
   background: #72b8ad !important;
 }
 
+.page-title__wrapper {
+  background: url("../img/bcg.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.page-title__wrapper:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: .6;
+}
+
+.page-title__wrapper .page__title {
+  padding: 80px 0;
+  padding-right: 150px;
+  font-size: 80px;
+  z-index: 9;
+  position: relative;
+  display: block;
+  font-weight: 200;
+}
+
+.page-title__wrapper .page__title:before {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #72b8ad;
+  top: 54%;
+  right: 0;
+  position: absolute;
+}
+
 /*==========  user style  ==========*/
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
