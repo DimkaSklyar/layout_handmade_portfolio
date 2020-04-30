@@ -7721,6 +7721,7 @@ p {
 body {
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
+  min-width: 500px;
 }
 
 .btn {
@@ -7933,6 +7934,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .section-about__content {
+    padding-top: 30px;
+  }
+}
+
 .section-about__souch {
   display: flex;
   align-items: center;
@@ -7942,6 +7949,12 @@ body {
 @media (max-width: 991px) {
   .section-about__souch {
     margin: 15px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .section-about__souch {
+    margin: 35px 0;
   }
 }
 
@@ -8083,6 +8096,12 @@ body {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .testimonial__content {
+    padding: 100px 35px 60px;
+  }
+}
+
 .testimonial__content:before {
   content: '\f10e';
   font-family: "FontAwesome";
@@ -8097,6 +8116,12 @@ body {
   font-size: 24px;
   font-weight: 300;
   quotes: none;
+}
+
+@media (max-width: 767px) {
+  .testimonial__content q {
+    font-size: 16px;
+  }
 }
 
 .testimonial__content cite {
@@ -8118,6 +8143,12 @@ body {
   font-weight: bold;
   font-style: normal;
   letter-spacing: 5px;
+}
+
+@media (max-width: 767px) {
+  .testimonial__content cite span {
+    font-size: 12px;
+  }
 }
 
 .testimonial .owl__button button {
@@ -8211,8 +8242,20 @@ body {
   padding: 100px 0;
 }
 
+@media (max-width: 767px) {
+  .footer {
+    padding: 60px 0;
+  }
+}
+
 .footer .social {
   justify-content: start;
+}
+
+@media (max-width: 767px) {
+  .footer .social {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 991px) {
@@ -8230,6 +8273,7 @@ body {
   height: 80px;
   margin: 0 auto;
   text-align: center;
+  margin: 30px 0 40px;
 }
 
 .footer .logo img {
@@ -8238,6 +8282,12 @@ body {
 
 .footer-contact {
   text-align: right;
+}
+
+@media (max-width: 767px) {
+  .footer-contact {
+    text-align: center;
+  }
 }
 
 .footer-contact a {
@@ -8254,6 +8304,13 @@ body {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .footer .nav-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .footer .nav-bottom .nav__item {
   position: relative;
   padding: 0 40px;
@@ -8262,6 +8319,12 @@ body {
 @media (max-width: 991px) {
   .footer .nav-bottom .nav__item {
     padding: 0 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .nav-bottom .nav__item {
+    padding: 10px 0;
   }
 }
 
@@ -8279,6 +8342,12 @@ body {
   transform: translateY(-50%);
   font-size: 40px;
   line-height: 0;
+}
+
+@media (max-width: 767px) {
+  .footer .nav-bottom .nav__item:not(:last-child):before {
+    content: none;
+  }
 }
 
 .footer .copyright {

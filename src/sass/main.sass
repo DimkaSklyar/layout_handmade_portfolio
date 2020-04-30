@@ -34,6 +34,7 @@ p
 body
 	font-family: 'Nunito', sans-serif
 	overflow-x: hidden
+	min-width: 500px
 
 .btn
 	display: inline-block
@@ -169,12 +170,16 @@ body
 		padding: 10px 0 0
 		+media-breakpoint-down(md)
 			padding: 0
+		+media-breakpoint-down(sm)
+			padding-top: 30px
 	&__souch
 		display: flex
 		align-items: center
 		margin: 35px 0
 		+media-breakpoint-down(md)
 			margin: 15px 0
+		+media-breakpoint-down(md)
+			margin: 35px 0
 		.souch__img
 			
 	blockquote
@@ -269,6 +274,8 @@ body
 		padding: 100px 80px 60px
 		margin-top: -70px
 		position: relative
+		+media-breakpoint-down(sm)
+			padding: 100px 35px 60px
 		&:before
 			content: '\f10e'
 			font-family: "FontAwesome"
@@ -281,6 +288,8 @@ body
 			font-size: 24px
 			font-weight: 300
 			quotes: none
+			+media-breakpoint-down(sm)
+				font-size: 16px
 		cite
 			display: block
 			font-family: 'Pacifico', cursive
@@ -296,6 +305,8 @@ body
 				font-weight: bold
 				font-style: normal
 				letter-spacing: 5px
+				+media-breakpoint-down(sm)
+					font-size: 12px
 	.owl__button
 		button
 			background: none
@@ -354,8 +365,12 @@ body
 .footer
 	background-color: $default
 	padding: 100px 0
+	+media-breakpoint-down(sm)
+		padding: 60px 0
 	.social
 		justify-content: start
+		+media-breakpoint-down(sm)
+			justify-content: center
 		&__item
 			+media-breakpoint-down(md)
 				margin: 0 10px
@@ -366,10 +381,14 @@ body
 		height: 80px
 		margin: 0 auto
 		text-align: center
+		+media-breakpoint-down(sm)
+		margin: 30px 0 40px
 		img
 			height: 100%
 	&-contact
 		text-align: right
+		+media-breakpoint-down(sm)
+			text-align: center
 		a
 			color: #fff
 			font-weight: bold
@@ -379,11 +398,16 @@ body
 	.nav-bottom
 		margin-top: 40px
 		display: flex
+		+media-breakpoint-down(sm)
+			flex-direction: column
+			align-items: center
 		.nav__item
 			position: relative
 			padding: 0 40px
 			+media-breakpoint-down(md)
 				padding: 0 25px
+			+media-breakpoint-down(sm)
+				padding: 10px 0
 			a
 				color: #fff
 				font-size: 18px
@@ -396,6 +420,8 @@ body
 				transform: translateY(-50%)
 				font-size: 40px
 				line-height: 0
+				+media-breakpoint-down(sm)
+					content: none
 	.copyright
 		text-align: center
 		color: #fff
