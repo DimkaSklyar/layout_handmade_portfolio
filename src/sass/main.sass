@@ -26,11 +26,14 @@ h2,
 	margin-bottom: 30px
 h2
 	font-size: 42px
+	+media-breakpoint-down(md)
+		font-size: 38px
 p
 	font-size: 17px
 	font-weight: 300
 body
 	font-family: 'Nunito', sans-serif
+	overflow-x: hidden
 
 .btn
 	display: inline-block
@@ -99,6 +102,8 @@ body
 
 .slider
 	height: calc(100vh - 95px)
+	+media-breakpoint-down(md)
+		height: auto
 	.container-fluid,
 	.row,
 	.col-12
@@ -106,10 +111,14 @@ body
 		margin: 0
 	&__item
 		height: calc(100vh - 95px)
+		+media-breakpoint-down(md)
+			height: auto
 		img
 			width: 100%
 			height: 100%
 			object-fit: cover
+			+media-breakpoint-down(md)
+				object-fit: contain
 
 .decor
 	display: inline-block
@@ -134,6 +143,8 @@ body
 
 .section
 	padding-top: 150px
+	+media-breakpoint-down(md)
+		padding-top: 100px
 	&__title
 		text-align: center
 
@@ -156,10 +167,14 @@ body
 			width: 100%
 	&__content
 		padding: 10px 0 0
+		+media-breakpoint-down(md)
+			padding: 0
 	&__souch
 		display: flex
 		align-items: center
 		margin: 35px 0
+		+media-breakpoint-down(md)
+			margin: 15px 0
 		.souch__img
 			
 	blockquote
@@ -180,6 +195,12 @@ body
 				font-family: 'Nunito', sans-serif
 				color: $default
 				font-size: 15px
+	p
+		+media-breakpoint-down(md)
+			font-size: 15px
+	h2
+		+media-breakpoint-down(md)
+			margin-bottom: 10px
 
 .gallery
 	&__item
@@ -295,8 +316,18 @@ body
 				margin-left: auto
 
 .create
+	padding-bottom: 150px
+	+media-breakpoint-down(md)
+		padding-bottom: 50px
+	.container-fluid
+		+media-breakpoint-down(md)
+			width: 720px
+			max-width: 100%
+			padding-right: 15px
+			padding-left: 15px
 	&__item
-
+		+media-breakpoint-down(md)
+			padding-bottom: 50px
 	&__img
 		img
 			width: 100%
@@ -305,6 +336,9 @@ body
 		padding: 0 18%
 		+media-breakpoint-down(lg)
 			padding: 0 5%
+		+media-breakpoint-down(md)
+			text-align: center
+			padding: 25px 5%
 		
 		.btn
 			margin-top: 25px
@@ -322,8 +356,12 @@ body
 	padding: 100px 0
 	.social
 		justify-content: start
+		&__item
+			+media-breakpoint-down(md)
+				margin: 0 10px
 		a
 			color: #fff
+			font-size: 18px
 	.logo
 		height: 80px
 		margin: 0 auto
@@ -344,6 +382,8 @@ body
 		.nav__item
 			position: relative
 			padding: 0 40px
+			+media-breakpoint-down(md)
+				padding: 0 25px
 			a
 				color: #fff
 				font-size: 18px
@@ -393,6 +433,18 @@ body
 		transition: .3s
 		&:hover
 			transform: scale(1.1)
+
+
+.owl-dots
+	text-align: center
+	button
+		border-radius: 50%
+		width: 15px
+		height: 15px
+		background: lighten($accent,20%) !important
+		margin: 0 10px
+		&.active
+			background: $accent !important
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
