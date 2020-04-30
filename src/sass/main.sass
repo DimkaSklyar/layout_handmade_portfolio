@@ -32,6 +32,17 @@ p
 body
 	font-family: 'Nunito', sans-serif
 
+.btn
+	display: inline-block
+	background-color: $accent
+	padding: 10px 30px
+	color: #fff
+	font-weight: bold
+	border-radius: 25px
+	&:hover
+		color: #fff
+		background-color: lighten($accent,10%)
+
 .page-header
 	.logo
 		height: 95px
@@ -243,6 +254,72 @@ body
 		&.next
 			#next
 				margin-left: auto
+
+.create
+	&__item
+
+	&__img
+		img
+			width: 100%
+	
+	&__content
+		padding: 0 18%
+		.btn
+			margin-top: 25px
+		h2
+			margin-bottom: 35px
+
+
+.footer
+	background-color: $default
+	padding: 100px 0
+	.social
+		justify-content: start
+		a
+			color: #fff
+	.logo
+		height: 80px
+		margin: 0 auto
+		text-align: center
+		img
+			height: 100%
+	&-contact
+		text-align: right
+		a
+			color: #fff
+			font-weight: bold
+		i
+			color: #fff
+
+	.nav-bottom
+		margin-top: 40px
+		display: flex
+		.nav__item
+			position: relative
+			padding: 0 40px
+			a
+				color: #fff
+				font-size: 18px
+			&:not(:last-child):before
+				content: '·'
+				position: absolute
+				top: 44%
+				right: 0
+				color: #fff
+				transform: translateY(-50%)
+				font-size: 40px
+				line-height: 0
+	.copyright
+		text-align: center
+		color: #fff
+		text-transform: uppercase
+		margin-top: 40px
+		p
+			font-size: 14px
+			i
+				color: red
+				padding-left: 5px
+
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
