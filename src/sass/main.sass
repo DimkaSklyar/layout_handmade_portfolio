@@ -47,6 +47,10 @@ body
 		color: #fff
 		background-color: lighten($accent,10%)
 
+	&_reverse
+		border: 2px solid #fff
+		outline: 0 none
+		cursor: pointer
 .page-header
 	.logo
 		height: 95px
@@ -503,7 +507,60 @@ body
 			right: 0
 			position: absolute
 
+.contacts
 
+	.bcg-color
+		background-color: $accent
+	h2
+		color: #000
+		font-size: 32px
+		line-height: 1
+		+media-breakpoint-down(md)
+			font-size: 25px
+		span
+			color: #fff
+	
+	&__item
+	
+		&_left
+			padding: 150px 80px 150px 30%
+			+media-breakpoint-down(lg)
+				padding-left: 40px
+			+media-breakpoint-down(sm)
+				padding: 100px 40px 
+		&_right
+			padding: 150px 80px 150px
+			+media-breakpoint-down(sm)
+				padding: 100px 40px 
+
+	textarea
+		margin-bottom: 40px
+
+	.address__item
+		display: flex
+		margin-bottom: 40px
+	.address__content
+		margin-left: 30px
+		h3
+			font-family: 'Pacifico', cursive
+		p,
+		a
+			color: #5c6f87
+			font-family: 'Nunito', sans-serif
+		p
+			margin-bottom: 0
+.input-form
+	width: 100%
+	background: none
+	border: none
+	border-bottom: 1px solid #fff
+	outline: 0 none
+	font-family: 'Nunito', sans-serif
+	padding: 10px 3px
+	font-size: 18px
+	margin-bottom: 20px
+	&:focus
+		border-bottom: 1px solid red
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
