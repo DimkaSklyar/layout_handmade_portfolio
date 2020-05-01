@@ -8630,6 +8630,25 @@ body {
   line-height: 1;
 }
 
+.ben {
+  padding: 60px 0;
+  background: url("../img/bcg-1.jpg") no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.ben:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #000;
+  opacity: .6;
+}
+
 /*==========  user style  ==========*/
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
